@@ -12,5 +12,8 @@ class Bloop extends Model
     protected $fillable = [
         'name',
         'description',
+        'colour',
+        'shape',
+        'age',
     ];
 }

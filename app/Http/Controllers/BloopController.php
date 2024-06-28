@@ -21,8 +21,11 @@ class BloopController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'description' => 'nullable',
+            'name' => 'required|max:255',
+            'description' => 'required',
+            'colour' => 'required|max:255',
+            'shape' => 'required|max:255',
+            'age' => 'required|integer|min:0',
         ]);
 
         Bloop::create($request->all());
@@ -44,6 +47,9 @@ class BloopController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'nullable',
+            'colour' => 'required',
+            'shape' => 'required',
+            'age' => 'required',
         ]);
 
         $bloop->update($request->all());

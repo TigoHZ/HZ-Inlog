@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Laravel App</title>
-    <!-- Add your CSS and JS files here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'Your Application')</title>
+    <link rel="stylesheet" href="{{ asset('resources/css/styles.css') }}">
 </head>
 <body>
-<div class="container">
-    @yield('content')
-</div>
+@yield('content')
 </body>
 </html>
+

@@ -38,9 +38,28 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Description:</strong>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $bloop->description }}</textarea>
+                        <textarea class="form-control" name="description" placeholder="Description">{{ $bloop->description }}</textarea>
                     </div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>colour:</strong>
+                        <input type="text" name="colour" value="{{ $bloop->colour }}" class="form-control" placeholder="colour">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>shape:</strong>
+                        <input type="text" name="shape" value="{{ $bloop->shape }}" class="form-control" placeholder="Shape">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Age:</strong>
+                        <input type="text" name="age" value="{{ $bloop->age }}" class="form-control" placeholder="Age">
+                    </div>
+                </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
